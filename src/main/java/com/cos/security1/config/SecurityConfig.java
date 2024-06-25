@@ -29,6 +29,8 @@ public class SecurityConfig {
                 .formLogin(form ->
                         form
                                 .loginPage("/loginForm")
+                                .loginProcessingUrl("/login") // "/login" 주소 호출되면 시큐리티가 낚아채서 로그인 진행해줌
+                                .defaultSuccessUrl("/") // 로그인 되면 메인 페이지서
                                 .permitAll()
                 )
                 .exceptionHandling(exceptionHandling ->
