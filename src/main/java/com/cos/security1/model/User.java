@@ -18,4 +18,6 @@ public class User {
     private String role; //user,admin,manger
     private Timestamp createDate;
 
+    private String provider;
+    private String providerId;
 }
